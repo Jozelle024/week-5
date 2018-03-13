@@ -1,0 +1,15 @@
+<table class="table table-hover table-striped">
+  <thead>
+    <th>Id post</th>
+    <th>User id</th>
+    <th>Title</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of elencoPost">
+      <td>{{post.id}}</td>
+      <td>{{post.userId}}</td>
+      <td>{{post.title}}</td>
+      <td><button class="btn btn-primary" (click)="visualizzaPost(post)">Visualizza</button></td>
+    </tr>
+  </tbody>
+</table>
